@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&family=Oswald:wght@400;600;700&display=swap');
+
+:root {
+    --gradient_one: #00dffc;
+    --gradient_two: #005f6b;
+    --gradient_three: #343838;
+    --gray_one: #e6e8e3;
+    --gray_two: #d7dacf;
+    --gray_three: #bec3bc;
+    --gray_four: #8f9a9c;
+    --gray_five: #65727a;
+    --gray_six: #eee;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nuosu SIL', serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1200px;
+    background-color: #fff;
+    margin: 30px;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* 1em = 16px */
+
+/* mobile first */
+.top {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(30deg, var(--gradient_one), var(--gradient_two), var(--gradient_three));
+    padding: 15px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+    line-height: 0.7em;
+}
+
+h2 span {
+    font-size: 0.4em;
+    font-weight: 300;
+}
+
+.group {
+    position: relative;
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    grid-template-columns: 2fr 3fr;
+    margin-top: 20px;
+}
+
+.group .imgBx {
+    width: 100px;
+
+}
+
+.group .imgBx img {
+    width: 100%;
+}
+
+.group p {
+    font-size: .8em;
+    color: var(--gray_two);
+}
+
+.bottom {
+    position: relative;
+    display: grid;
+    margin: 20px 20px 0;
+    gap: 40px;
+    grid-template-columns: 2fr 3fr;
+}
+
+.bottom .leftSide2 {
+    margin-top: 20px;
+
+}
+
+h4 {
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: #fff;
+    background-color: var(--gradient_two);
+    font-weight: 600;
+    padding: 0 15px;
+    display: inline-flex;
+}
+
+.contactInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.contactInfo li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.contactInfo li .icon {
+    color: var(--gradient_two);
+}
+
+.contactInfo li .text {
+    color: var(--gray_five);
+}
+
+.contactInfo li a {
+    color: var(--gray_five);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.skills {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.skills .skillBox {
+    position: relative;
+    display: grid;
+    align-items: center;
+}
+
+.skills .skillBox p {
+    color: var(--gray_five);
+}
+
+.skills .skillBox .value {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: var(--gray_six);
+}
+
+.skills .skillBox .value::before {
+    content: '';
+    position: absolute;
+    width: var(--i);
+    height: 100%;
+    background-color: var(--gradient_two);
+}
+
+.adjMargin {
+    margin-top: -10px;
+}
+
+.edu_group {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 10px;
+}
+
+.edu_groupBx {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.edu_groupBx p:nth-child(1) {
+    font-weight: 500;
+}
+
+.edu_groupBx .space {
+    margin-top: 9px;
+}
+
+.edu_groupBx b {
+    font-weight: 600;
+    color: var(--gradient_two);
+}
+
+.hoobies {
+    margin-top: 35px;
+    padding: 0 50px 50px;
+}
+
+.hoobies ul {
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.hoobies ul li {
+    list-style: none;
+    color: var(--gradient_three);
+    width: calc(100% / 5);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--gray_six);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.hoobies ul li:hover {
+    background-color: var(--gradient_two);
+    color: #fff;
+}
+
+.hoobies ul li i {
+    font-size: 2em;
+}
+
+/* tabs */
+@media only screen and (min-width:45em) {
+    body {
+        min-height: 100vh;
+    }
+
+    .top {
+        height: 300px;
+        padding: 50px;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    .container {
+
+        min-height: 1200px;
+    }
+
+    .group .imgBx {
+        width: 150px;
+
+    }
+
+    .bottom {
+        margin: 80px 20px 0;
+        gap: 40px;
+    }
+
+    h2 {
+        font-size: 4em;
+        color: #fff;
+        line-height: 0.7em;
+    }
+
+    h2 span {
+        font-size: 0.4em;
+        font-weight: 300;
+    }
+
+    .group p {
+        font-size: 1.1em;
+        color: var(--gray_six);
+    }
+
+    h4 {
+        font-size: 1.4em;
+
+    }
+}
+
+/* desktop */
+@media only screen and (min-width:67em) {
+    .group .imgBx {
+        width: 200px;
+
+    }
+
+    .bottom {
+        margin: 150px 20px 0;
+        gap: 40px;
+    }
+
+}
