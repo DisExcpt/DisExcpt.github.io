@@ -9,10 +9,11 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CV_Desing_one</title>
+    <script src="html2canvas.js"></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="Contenedor">
         <div class="top">
             <h2>Axel Miranda <br> <span>Ingeniero en Computación</span> </h2>
 
@@ -144,7 +145,24 @@
                 </li>
             </ul>
         </div>
+
     </div>
+    <div class="btnDescarga">
+        <div onclick="Div2IMG('Contenedor')">Descargar Cv</div>
+    </div>
+    <script>
+        function Div2IMG(divID) {
+            html2canvas(document.getElementById(divID)).then(function (canvas) {
+                var anchor = document.createElement("a");
+                // document.body.appendChild(anchor);
+                // document.getElementById("ShowImage").appendChild(canvas);
+                anchor.download = "Cv_axel.jpg";
+                anchor.href = canvas.toDataURL();
+                anchor.target = "_blank";
+                anchor.click();
+            });
+        }
+    </script>
 
 </body>
 
