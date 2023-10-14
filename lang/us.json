@@ -1,0 +1,33 @@
+{
+    "profile": {
+        "profession": "Computer Engineering",
+        "description": "<p>Student in the last semester of my computer engineering degree, I am 23 years old, a fan of programming, music, technology and travel. </p><p>I like watching courses to learn new technologies, whether they are web, mobile and desktop programming, I am a fan of Japanese series and video games</p>"
+    },
+    "contact": {
+        "contact_title": "contact",
+        "tel": "+52 3320720727",
+        "email": "disp.excpt@gmail.com",
+        "site": "DisExcpt.github.io",
+        "location": "jalisco, Mexico"
+    },
+    "skils": {
+        "skil": "skils"
+    },
+    "education": {
+        "education_title": "education",
+        "type": "General Baccalaureate by Competency",
+        "type2": "Computer Engineering"
+    },
+    "experience": {
+        "work_title": "work experience",
+        "work_experience": "Personal projects only"
+    },
+    "hobbies": {
+        "hobbie_title": "hobbies",
+        "programming": "Programming",
+        "music": "Music",
+        "videoGame": "VideoGame",
+        "courses": "Courses",
+        "volleyball": "Volleyball"
+    }
+}
